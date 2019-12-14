@@ -2,15 +2,17 @@
   "name": "explore-docker-nextjs",
   "version": "0.0.0",
   "description": "A starting point to explore Docker and NextJS",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start:example:01",
-    "start:clean": "npm run start:example:01:clean",
-    "stop": "npm run stop:example:01",
+    "start": "npm run start:example:02",
+    "start:clean": "npm run start:example:02:clean",
+    "stop": "npm run stop:example:02",
     "start:example:01": "cd examples/01-get-started-with-next-js && npm start",
     "start:example:01:clean": "cd examples/01-get-started-with-next-js && npm run build",
     "stop:example:01": "cd examples/01-get-started-with-next-js && npm run stop",
+    "start:example:02": "cd examples/02-next-js-graphql-apollo-client-and-server && npm start",
+    "start:example:02:clean": "cd examples/02-next-js-graphql-apollo-client-and-server && npm run build",
+    "stop:example:02": "cd examples/02-next-js-graphql-apollo-client-and-server && npm run stop",
     "docker:nuke": "docker system prune -a && docker volume prune"
   },
   "repository": {
