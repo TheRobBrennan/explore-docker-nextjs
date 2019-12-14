@@ -1,0 +1,19 @@
+{
+  "name": "explore-docker-nextjs",
+  "version": "0.0.0",
+  "description": "A starting point to explore Docker and NextJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-docker-nextjs.git"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-docker-nextjs/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-docker-nextjs#readme"
+}
