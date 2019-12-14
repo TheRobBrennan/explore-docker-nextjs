@@ -40,3 +40,7 @@ To run a specific example - such as `01-get-started-with-next-js` - you can run:
 ```sh
 $ npm run start:example:01
 ```
+
+Your application should be available at [http://localhost:3000](http://localhost:3000).
+
+To verify this is working as expected, try making a change to the text in `examples/01-get-started-with-next-js/front-end/components/hello/index.tsx` and watch the hot reloading work automatically.
