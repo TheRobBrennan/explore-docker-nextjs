@@ -31,7 +31,7 @@ The following scripts have been added to this repo in `./package.json`:
 + `stop:example:##` - Spins down the Dockerized version of the app
 + `docker:nuke` - CAUTION! This will prompt you before destroying **ALL** Docker containers, images, volumes, etc on your development machine
 
-By default, `npm start` will run example 01 in this repo.
+By default, `npm start` will run the latest example in this repo.
 
 To run a specific example, you can run `npm run start:example:01`
 
@@ -54,4 +54,23 @@ When you are finished, you can run:
 
 # Stop all Docker containers for the example
 $ npm run stop:example:01
+```
+
+### Example 02: Getting started with Next.js, GraphQL, and Apollo
+
+To run this example:
+
+```sh
+$ npm run start:example:02
+```
+
+Your application should be available at [http://localhost:3000](http://localhost:3000).
+
+When you are finished, you can run:
+
+```sh
+# Press CTRL+C to kill the process
+
+# Stop all Docker containers for the example
+$ npm run stop:example:02
 ```
