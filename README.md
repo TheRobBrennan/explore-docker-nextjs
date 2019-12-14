@@ -24,4 +24,34 @@ $ npm -v
 
 ## Examples
 
-Please see `examples/README.md` for specific details about our examples.
+The following scripts have been added to this repo in `./package.json`:
+
++ `start:example:##` - Starts a Dockerized version of the example using the latest build
++ `start:example:##:clean` - Builds a Dockerized version of the app using the latest updates to Docker files
++ `stop:example:##` - Spins down the Dockerized version of the app
++ `docker:nuke` - CAUTION! This will prompt you before destroying **ALL** Docker containers, images, volumes, etc on your development machine
+
+By default, `npm start` will run example 01 in this repo.
+
+To run a specific example, you can run `npm run start:example:01`
+
+### Example 01: Getting started with NextJS
+
+To run this example:
+
+```sh
+$ npm run start:example:01
+```
+
+Your application should be available at [http://localhost:3000](http://localhost:3000).
+
+To verify this is working as expected, try making a change to the text in `examples/01-get-started-with-next-js/front-end/components/hello/index.tsx` and watch the hot reloading work automatically.
+
+When you are finished, you can run:
+
+```sh
+# Press CTRL+C to kill the process
+
+# Stop all Docker containers for the example
+$ npm run stop:example:01
+```

@@ -1,0 +1,14 @@
+{
+  "name": "01-get-started-with-next",
+  "version": "0.0.0",
+  "description": "A simple project exploring Next.js and Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose up --remove-orphans --build --force-recreate",
+    "stop": "docker-compose down",
+    "docker:nuke": "docker system prune -a && docker volume prune"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "ISC"
+}

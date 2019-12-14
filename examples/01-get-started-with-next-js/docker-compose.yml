@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  nextjs-example-01-app:
+    container_name: nextjs-example-01-app
+    build:
+      context: ./front-end
+      dockerfile: ./Dockerfile
+    command: sh -c "npm run dev"
+    ports:
+      - '3000:3000'
+    volumes:
+      - './front-end:/app'
+      # Use these folders from the Docker container and NOT the local development environment
+      - '/app/node_modules'
+      - '/app/.next'
