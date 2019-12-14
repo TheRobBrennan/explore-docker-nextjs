@@ -66,6 +66,11 @@ $ npm run start:example:02
 
 Your application should be available at [http://localhost:3000](http://localhost:3000).
 
+Notice that this example contains:
+
++ A Next.js page wrapped in the Apollo higher order component (HOC)
++ A static page that does not need to be wrapped by the Apollo higher order component (HOC)
+
 When you are finished, you can run:
 
 ```sh
