@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  nextjs-example-02-app:
+    container_name: nextjs-example-02-app
+    build:
+      context: ./api-routes-apollo-server-and-client-app
+      dockerfile: ./Dockerfile
+    command: sh -c "npm run dev"
+    ports:
+      - '3000:3000'
+    volumes:
+      - './api-routes-apollo-server-and-client-app:/app'
+      # Use these folders from the Docker container and NOT the local development environment
+      - '/app/node_modules'
+      - '/app/.next'
