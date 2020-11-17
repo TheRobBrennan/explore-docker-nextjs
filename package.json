@@ -13,6 +13,9 @@
     "start:example:02": "cd examples/02-next-js-graphql-apollo-client-and-server && npm start",
     "start:example:02:clean": "cd examples/02-next-js-graphql-apollo-client-and-server && npm run build",
     "stop:example:02": "cd examples/02-next-js-graphql-apollo-client-and-server && npm run stop",
+    "start:example:03": "cd examples/03-nextjs-typescript && npm start",
+    "start:example:03:clean": "cd examples/03-nextjs-typescript && npm run build",
+    "stop:example:03": "cd examples/03-nextjs-typescript && npm run stop",
     "docker:nuke": "docker system prune -a && docker volume prune"
   },
   "repository": {
