@@ -2,7 +2,7 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_OPTIONS='--inspect=0.0.0.0:9229' next dev",
     "build": "next build",
     "start": "next start",
     "stop": "docker-compose stop",
