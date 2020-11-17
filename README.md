@@ -26,10 +26,10 @@ $ npm -v
 
 The following scripts have been added to this repo in `./package.json`:
 
-+ `start:example:##` - Starts a Dockerized version of the example using the latest build
-+ `start:example:##:clean` - Builds a Dockerized version of the app using the latest updates to Docker files
-+ `stop:example:##` - Spins down the Dockerized version of the app
-+ `docker:nuke` - CAUTION! This will prompt you before destroying **ALL** Docker containers, images, volumes, etc on your development machine
+- `start:example:##` - Starts a Dockerized version of the example using the latest build
+- `start:example:##:clean` - Builds a Dockerized version of the app using the latest updates to Docker files
+- `stop:example:##` - Spins down the Dockerized version of the app
+- `docker:nuke` - CAUTION! This will prompt you before destroying **ALL** Docker containers, images, volumes, etc on your development machine
 
 By default, `npm start` will run the latest example in this repo.
 
@@ -68,8 +68,8 @@ Your application should be available at [http://localhost:3000](http://localhost
 
 Notice that this example contains:
 
-+ A Next.js page wrapped in the Apollo higher order component (HOC)
-+ A static page that does not need to be wrapped by the Apollo higher order component (HOC)
+- A Next.js page wrapped in the Apollo higher order component (HOC)
+- A static page that does not need to be wrapped by the Apollo higher order component (HOC)
 
 When you are finished, you can run:
 
@@ -78,4 +78,27 @@ When you are finished, you can run:
 
 # Stop all Docker containers for the example
 $ npm run stop:example:02
+```
+
+### Example 03: Next.js with TypeScript
+
+To run this example:
+
+```sh
+$ npm run start:example:03
+```
+
+Your application should be available at [http://localhost:3000](http://localhost:3000).
+
+Notice that this example contains:
+
+- A Next.js application with TypeScript support
+
+When you are finished, you can run:
+
+```sh
+# Press CTRL+C to kill the process
+
+# Stop all Docker containers for the example
+$ npm run stop:example:03
 ```
