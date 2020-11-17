@@ -5,6 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "stop": "docker-compose stop",
+    "destroy": "docker-compose rm -f",
+    "destroy:global": "docker system prune -f || docker volume prune -f",
     "type-check": "tsc"
   },
   "dependencies": {
