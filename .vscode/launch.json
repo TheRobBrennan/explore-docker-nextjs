@@ -31,8 +31,11 @@
   ],
   "compounds": [
     {
-      "name": "Example 03 - Server and Client",
-      "configurations": ["Example 03 - Launch Chrome"]
+      "name": "Example 03 - [LOCAL] Server and Client",
+      "configurations": [
+        "Example 03 - Launch Chrome",
+        "Example 03 - [LOCAL] Next.js server"
+      ]
     }
   ]
 }
