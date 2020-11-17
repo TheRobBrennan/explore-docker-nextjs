@@ -1,0 +1,22 @@
+{
+  "name": "03-nextjs-typescript",
+  "version": "0.0.0",
+  "description": "For this project, we are going to be creating a Next.js app that will use `create-next-app` to generate a Next.js app that uses TypeScript.",
+  "keywords": [],
+  "author": "Rob Brennan <rob@therobbrennan.com> (therobbrennan.com)",
+  "license": "ISC",
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose up --remove-orphans --build --force-recreate",
+    "stop": "docker-compose down",
+    "docker:nuke": "docker system prune -a && docker volume prune"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-docker-nextjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-docker-nextjs/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-docker-nextjs#readme"
+}
