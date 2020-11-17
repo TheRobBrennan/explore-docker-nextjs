@@ -1,0 +1,41 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Example 03 - [LOCAL] Next.js server",
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "port": 9229,
+      "cwd": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript",
+      "runtimeExecutable": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript/node_modules/next/dist/bin/next",
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    },
+    {
+      "name": "Example 03 - Launch Chrome",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Example 03 - [LOCAL] Server and Client",
+      "configurations": [
+        "Example 03 - Launch Chrome",
+        "Example 03 - [LOCAL] Next.js server"
+      ]
+    }
+  ]
+}
