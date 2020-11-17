@@ -5,12 +5,28 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Example 03 - [LOCAL] Next.js server",
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "port": 9229,
+      "cwd": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript",
+      "runtimeExecutable": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript/node_modules/next/dist/bin/next",
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    },
+    {
       "name": "Example 03 - Launch Chrome",
       "request": "launch",
       "type": "pwa-chrome",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript",
-      "sourceMaps": true
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceFolder}/examples/03-nextjs-typescript/nextjs-with-typescript"
+      }
     }
   ],
   "compounds": [
